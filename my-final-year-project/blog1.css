@@ -1,0 +1,572 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier,;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+header .desktop-navigation .desktop-navigation-items li a.current{
+    color: white;
+    background-color: purple;
+    border-radius: 3px;
+}
+
+/* Header styles */
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+header .logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .logo #menu-btn{
+    font-size: 25px;
+    display: none;
+}
+
+
+header .mobile-navigation{
+    display: none;
+}
+
+header .desktop-navigation{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desktop-navigation-items{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desktop-navigation-items li{
+    list-style: none;
+}
+
+header .desktop-navigation-items li a{
+    font-size: 17px;
+    color: purple;
+    padding: 5px 10px;
+}
+
+header .desktop-navigation-items li a:hover{
+    color: white;
+    background-color: purple;
+    border-radius: 3px;
+}
+
+
+h4{
+    font-size: 14px;
+    text-align: center;
+    color:#000000; 
+    margin: 14px;
+    letter-spacing: 1px;
+}
+
+.sliderr{
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+}
+
+body .topbar{
+    background-color: #fafafa; 
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    float: right;
+}
+
+.sliderr .top-bar-s{
+    position: relative;
+    left: 0;
+    width: 500%;
+    animation: 8s slide forwards;
+}
+
+.slide-up{
+    position: relative;
+    width: 20%;
+    float: left;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    90%{
+        left: 0;
+    }
+    1000%{
+        left: 0;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 100px;
+    background-color: #fafafa;
+}
+
+.hero-text{
+    color: purple;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 250px;
+}
+
+.blog{
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60px solid #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 20px solid #fff;
+    max-width: 900px;
+}
+
+.paragraph{
+    border-left: 5px solid #8d47a1; 
+    padding-left: 5px;
+}
+
+h2{
+    font-size: 1.0rem;
+    color: #8d47a1;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #434343;
+    color: white;
+    margin-top: 100px;
+}
+
+footer img{
+    width: 70px;
+    height: 70px;
+    margin-top: 4%;
+    border-radius: 50%;
+}
+
+footer .who-we-are{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+footer .who-we-are p a{
+    color: #fafafa;
+}
+
+
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .quick-links h3{
+    color: rgb(12, 12, 12);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    padding-left: 5px;
+}
+
+footer .quick-links li a{
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    width: auto;
+}
+
+footer .quick-links li a:hover{
+    color: var(--myBlue);
+    background-color: rgb(12, 12, 12);
+    /* width: 25%; */
+    /* padding: 3px; */
+    border-radius: 5px;
+}
+
+
+footer .contact{
+    width: 25%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+
+
+footer .contact .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    height: 60px;
+}
+
+footer .contact .cont span{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact .cont span .mymail{
+    text-transform: none;
+}
+
+
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 500px) {
+    header .desktop-navigation{
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+    }
+
+    header .desktop-navigation{
+        display: none;
+    }
+
+    header .logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    header .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    header .logo #menu-btn{
+        display: block;
+        font-size: 30px;
+    }
+
+    header .mobile-navigation{
+        display: none;
+        height: 100vh;
+        width: 60%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        gap: 50px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    header .mobile-navigation-items{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 40%;
+        width: 100%;
+        position: absolute;
+        top: 97px;
+    }
+
+    header .mobile-navigation-items li{
+        height: 40px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    header .mobile-navigation-items li a{
+        background-color: #8d47a1;
+        color: #fafafa;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    header .mobile-navigation-items li a:hover{
+        background-color: #622174;
+    }
+    
+    
+
+    .mobile-navigation .mobile-navigation-header{
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobile-navigation .mobile-navigation-header #close-btn{
+        font-size: 25px;
+        position: relative;
+        left: 80%;
+        top: 20%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: #434343;
+        color: white;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    
+    footer img{
+        width: 50px;
+        height: 50px;
+        margin-top: 4%;
+        border-radius: 50%;
+    }
+    
+    footer .who-we-are{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 10px;
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    footer .who-we-are .connect{
+        color: black;
+        font-weight: 900;
+        background-color: white;
+        width: 50vw;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    footer .who-we-are p a{
+        color: white;
+    }
+    
+    /* footer .who-we-are .made-by{
+        text-decoration: underline;
+    } */
+    
+    footer .quick-links{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 10px;
+        list-style: none;
+        padding-left: 20px;
+    }
+    
+    footer .quick-links h3{
+        color: black;
+        background-color: white;
+        font-weight: 900;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        width: 50%;
+        padding-left: 5px;
+    }
+    
+    footer .quick-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 10px;
+        width: auto;
+    }
+    
+    footer .quick-links li a:hover{
+        color: white;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    
+    
+    footer .contact{
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer .contact h3{
+        color: black;
+        font-weight: 900;
+        background-color: white;
+        width: 50vw;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+        
+    
+    footer .contact .cont{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    
+    footer .contact .cont span{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    footer .contact .cont span .mymail{
+        text-transform: none;
+    }
+
+    footer .contact .cont span .mailAddress{
+        font-size: 13px;
+    }
+
+
+}

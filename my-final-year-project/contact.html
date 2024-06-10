@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/bt logo.JPG" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="images/BT.JPG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="contact.css" rel="stylesheet" type="text/css">
+    <title>beverly'streats</title>
+</head>
+<body>
+    <div class="topbar">
+        <div class="sliderr">
+            <figure class="top-bar-s">
+                <div class="slide-up">
+                    <H4>A TASTE OF HEAVEN!</H4>
+                </div>
+                <div class="slide-up">
+                    <H4>LET'S TAKE YOUR TASTE BUDS ON A SWEET RIDE!</H4>
+                </div>  
+                <div class="slide-up">
+                    <H4>A TASTE OF HEAVEN!</H4>
+                </div>
+                <div class="slide-up">
+                    <H4>LET'S TAKE YOUR TASTE BUDS ON A SWEET RIDE!</H4>
+                </div>  
+            </figure>
+        </div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <i id="menu-btn" class="fa-solid fa-bars fa-xs" onclick="showNavbar()"></i>
+            <img src="images/bt logo.JPG" alt="" srcset="">
+        </div>
+        <!--desktop navigation-->
+       <nav class="desktop-navigation">
+            <ul class="desktop-navigation-items">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li> <a href="contact.html">Contact</a> </li>
+            </ul>
+
+            <div>
+        </nav> 
+        
+
+        <!--mobile navigation-->
+        <nav class="mobile-navigation" id="mobile-navigation">
+            <div class="mobile-navigation-header">
+                <i id="close-btn" class="fa-solid fa-xmark" onclick="showNavbar()"></i>
+            </div>
+            <ul class="mobile-navigation-items">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li> <a href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <hr>
+
+        
+        <form action="https://formsubmit.co/beverlychukwudolue01@gmail.com" method="POST">
+
+            <div class="row">
+                <span>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="enter your first name" required>
+                </span>
+
+                <span>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="enter your last name" required>
+                </span>
+            </div>
+            
+            <div class="row">
+                <span>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </span>
+
+                <span>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="phoneNumber" placeholder="enter your phone number" required>
+                </span>
+            </div>
+
+            <div class="row">
+                <section>
+                    <label for="streetName">Street Name</label>
+                    <input type="text" name="streetName" placeholder="enter your street name" required>
+                </section>
+            </div>
+
+            <div class="row">
+                <span>
+                    <label for="city">City</label>
+                    <input type="text" name="city" placeholder="enter your city" required>
+                </span>
+
+                <span>
+                    <label for="state">State</label>
+                    <input type="text" name="state" placeholder="enter your state" required>
+                </span>
+            </div>
+
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea name="message" id="text" class="text" cols="30" rows="10" required></textarea>
+            </div>
+
+            <button type="submit">send message</button>
+        </form>
+    </div>
+
+    <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/232673923080557"></script> -->
+
+    
+    <footer>
+        <div class=" who-we-are">
+            <img src="./images/bt logo.JPG" alt="">
+            <p>Connect with Us:</p>    
+            <p class="made-by"> <a href="https://www.instagram.com/reel/CrtVdaaIMTE/?igshid=MzRlODBiNWFlZA==">Instagram</p></a>  
+            <p class="made-by"> <a href="https://www.instagram.com/reel/CrtVdaaIMTE/?igshid=MzRlODBiNWFlZA==">Twitter</p></a>   
+            <p>&copy; 2023 Beverly's Treats.</p>
+            <p class="made-by"> <a href="https://www.instagram.com/reel/CrtVdaaIMTE/?igshid=MzRlODBiNWFlZA==">Designed by TheOnlyBeverly Media</p></a> 
+            <div></div>
+        </div>
+
+        <ul class="quick-links">
+            <h3>Quick Links</h3>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <address class="contact">
+            <h3>Contact Info:</h3>
+            <div class="cont">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>
+                    <p>
+                        Location:
+                    </p>
+                    <p>
+                        Lagos,Nigeria.
+                    </p>
+                </span>
+            </div>
+            <div class="cont">
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <span>
+                    <p>
+                        Opening Hours:
+                    </p>
+                    <p>
+                        8:00 AM – 5:00 PM
+                    </p>
+                </span>
+            </div>
+
+            <div class="cont">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <span>
+                    <p>
+                        Phone:
+                    </p>
+                    <p>
+                        +234 7047772082
+                    </p>
+                </span>
+            </div>
+
+            <div class="cont">
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <span>
+                    <p class="mymail">
+                        E-mail:
+                    </p>
+                    <p class="mymail">
+                       beverlyckukwudolue01@gmail.com
+                    </p>
+                </span>
+            </div>
+        </address>
+    </footer>
+</body>
+<script src="./beverlystreats.js"></script>
+</html> 
